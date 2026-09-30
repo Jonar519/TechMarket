@@ -1,0 +1,32 @@
+:root{--bg:#eef1f5;--ink:#0e1726;--mut:#5b6678;--panel:#fff;--line:#d8dee8;--acc:#2f3fe0;--ssg:#0f8a6d;--isr:#b26a00;--ssr:#7a3fd1;--csr:#c2334d}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 "Avenir Next","Segoe UI",system-ui,sans-serif}
+a{color:inherit;text-decoration:none}h1,h2,h3{letter-spacing:-.025em;line-height:1.1;margin:0 0 .6rem}
+h1{font-size:clamp(2rem,5vw,3.4rem);font-weight:650}h2{font-size:1.5rem;margin-top:2.5rem}
+main{max-width:1080px;margin:0 auto;padding:1.5rem 1.25rem 4rem}
+.nav{display:flex;justify-content:space-between;align-items:center;padding:1rem 1.25rem;max-width:1080px;margin:0 auto}
+.logo{font-weight:700;font-size:1.25rem;letter-spacing:-.04em}.nav nav{display:flex;gap:1.4rem;color:var(--mut);font-size:.95rem}.nav nav a:hover{color:var(--ink)}
+.count{background:var(--ink);color:#fff;border-radius:99px;padding:0 .5rem;font-size:.75rem}
+footer{text-align:center;color:var(--mut);padding:2rem;font-size:.85rem}
+.hero{padding:3.5rem 0 1.5rem;max-width:720px}.hero p{font-size:1.15rem;color:var(--mut);max-width:56ch}
+.row{display:flex;gap:.75rem;flex-wrap:wrap;margin:1.2rem 0}
+.btn{background:var(--ink);color:#fff;border:0;border-radius:10px;padding:.7rem 1.2rem;font:inherit;font-weight:600;cursor:pointer;display:inline-block}
+.btn:hover{background:var(--acc)}.btn:disabled{opacity:.4;cursor:not-allowed}.btn.ghost{background:transparent;color:var(--ink);border:1px solid var(--ink)}.btn.ghost:hover{background:var(--ink);color:#fff}
+:focus-visible{outline:3px solid var(--acc);outline-offset:2px}
+.link{background:none;border:0;color:var(--acc);cursor:pointer;font:inherit}
+.chips{display:flex;gap:.5rem;flex-wrap:wrap}.chips a{border:1px solid var(--line);background:var(--panel);border-radius:99px;padding:.3rem .9rem;font-size:.9rem}.chips a:hover{border-color:var(--acc);color:var(--acc)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:1.2rem}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:1rem;transition:transform .2s}.card:hover{transform:translateY(-3px);border-color:var(--acc)}
+.card small,.detail small{color:var(--mut)}.card h3{font-size:1.1rem;margin:.2rem 0}.card p{margin:0;font-weight:650}
+.thumb{background:linear-gradient(145deg,#e4e8f5,#f7f8fc);border-radius:12px;display:grid;place-items:center;font-size:3.4rem;height:150px;margin-bottom:.8rem}.thumb.big{font-size:8rem;height:360px;border-radius:24px}
+.detail{display:grid;grid-template-columns:1fr 1fr;gap:2.5rem;align-items:center;margin-top:1rem}.price{font-size:2rem;font-weight:700;margin:1rem 0 .2rem}.warn{color:var(--csr);font-weight:600}
+.badge{display:inline-flex;align-items:center;gap:.7rem;border:1px solid currentColor;border-radius:12px;padding:.3rem .8rem .3rem .3rem;font-size:.82rem;background:var(--panel);margin-bottom:1rem}
+.badge b{background:currentColor;border-radius:8px;padding:.1rem .6rem}.badge b{color:#fff}.badge span{color:var(--ink)}
+.SSG{color:var(--ssg)}.ISR{color:var(--isr)}.SSR{color:var(--ssr)}.CSR{color:var(--csr)}
+input,select{font:inherit;padding:.65rem .9rem;border:1px solid var(--line);border-radius:10px;background:var(--panel)}
+.line{display:flex;gap:1rem;align-items:center;justify-content:space-between;padding:.9rem 0;border-bottom:1px solid var(--line)}.line input[type=number]{width:96px}.line span:first-of-type{flex:1}.total{font-weight:700;font-size:1.15rem}
+.empty{color:var(--mut);padding:2rem 0}.scroll{overflow-x:auto;background:var(--panel);border-radius:18px;border:1px solid var(--line)}
+table{border-collapse:collapse;width:100%;font-size:.92rem}th,td{text-align:left;padding:.9rem 1rem;border-bottom:1px solid var(--line);vertical-align:top}th{color:var(--mut);font-weight:600}tr:last-child td{border:0}td a{color:var(--acc);text-decoration:underline}
+.pill{font-weight:700}
+@media(max-width:720px){.detail{grid-template-columns:1fr}.thumb.big{height:220px}.nav nav{gap:.8rem;font-size:.85rem}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}}
